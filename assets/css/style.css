@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1a2d;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.box-card {
+    background-color: #15273f;
+    width: 22rem;
+    height: 38rem;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .7), 0px 0px 30px rgba(0, 0, 0, .4);
+}
+
+.content-card {
+    position: absolute;
+    margin: 30px;
+}
+
+.img-card {
+    position: relative;
+    width: 100% !important;
+    height: 19rem;
+}
+
+.hover-contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100% !important;
+    height: 19rem;
+}
+
+.hover {
+    width: 100% !important;
+    height: 19rem;
+    border-radius: 10px;
+    background-color: #00fff7;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
+
+.hover-contain div img {
+    width: 3rem !important;
+    height: 3.5rem;
+    position: absolute;
+    left: 43%;
+    top: 40%;
+    z-index: 1000 !important;
+    display: none;
+    cursor: pointer;
+}
+
+.img-card img {
+    position: absolute;
+    width: 100% !important;
+    height: 19rem;
+    border-radius: 10px;
+    z-index: 1 !important;
+}
+
+.text-card {
+    margin: 1.5rem 0 1rem;
+}
+
+.title-card {
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    transition: all .3s;
+    display: inline-block;
+}
+
+.title-card:hover {
+    cursor: pointer;
+    color: #00fff6;
+}
+
+.subTitle-card {
+    color: #697a95;
+    margin-bottom: 1rem;
+    line-height: 2;
+}
+
+.info-card {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #697a95;
+}
+
+.price-card {
+    color: #00fff6;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.price-card span {
+    font-size: .9rem;
+    margin-left: 5px;
+}
+
+.time-card {
+    color: #697a95;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.time-card span {
+    font-size: .9rem;
+    margin-left: 5px;
+}
+
+.footer-card {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.footer-card img {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.text-footer-card {
+    margin-left: 15px;
+    color: #697a95;
+    font-size: .9rem;
+}
+
+.text-footer-card span {
+    color: #ffffff;
+    transition: all .3s;
+}
+
+.text-footer-card span:hover {
+    cursor: pointer;
+    color: #00fff6;
+}
